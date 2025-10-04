@@ -9,8 +9,9 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+- Mahasiswa dapat memahami perbedaan konsep dan penerapan dari ke tiga paradigma (prosedural, OOP, dan fungsional)
+- Mahasiswa dapata membuat contoh program sederhana dengan pendekatan prosedural, OOP, dan fungsional
+- Mahasiswa mampu mengidentifikasi kelebihan dan kekurangan masing-masing paradigma
 
 ---
 
