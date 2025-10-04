@@ -18,9 +18,9 @@ Topik:Pengenalan ke 3 Paradigma Pemrograman yaitu (prosedural, OOP, dan fungsion
 ## Dasar Teori
 (Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
 Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+1. paradigma prosedural: pemrograman yang berfokus pada urutan langkah-langkah atau instruksi (step by step) untuk menyelesaikan suatu masalah.
+2. Paradigma OOP: paradigma pemrograman yang berfokus pada objek sebagai elemen utama dalam membangun program.  
+3. Paradigma fungsional: pemrograman yang berfokus pada fungsi murni (pure function) sebagai blok utama program.
 
 ---
 
