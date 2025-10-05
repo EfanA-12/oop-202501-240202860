@@ -35,23 +35,14 @@ Topik:Pengenalan ke 3 Paradigma Pemrograman yaitu (prosedural, OOP, dan fungsion
 
 ### 1. Prosedural
 ```java
-// HelloProcedural.java
 public class HelloProcedural {
-    
-    // Method 
-    public static void sapa(String nama, String nim){
-        System.out.println("Hello World I'm "+ nama + " -"+ nim);
-    }
-
-    public static void main(String[] args) {
-        // Prosedural Tanpa Method
-        String nama = "Dimas Wahyu Pratama";
-        String nim = "240202858";
-        System.out.println("Hello World I'm "+ nama + " -"+ nim);
-        
-        // Prosedural dengan method
-        sapa("Dimas Wahyu Pratama", "240202858");
-    }
+   public static void main(String[] args) {
+      String nim = "240202860";
+      String nama = "Efan Aryanto Adli";
+      
+      System.out.println("Hello Word");
+      System.out.println("I am: " + nama + ", NIM: " + nim);
+   }
 }
 ```
 ---
