@@ -24,9 +24,10 @@ Topik:Pengenalan ke 3 Paradigma Pemrograman yaitu (prosedural, OOP, dan fungsion
 
 ## Langkah Praktikum
 (Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. Membuat tiga file program Java (`HelloProcedural.java`, `HelloOOP.java`, dan `HelloFunctional.java`)
+2. tukiskan kode dengan benar dan sesuai dangan paradigma 
+3. lalu jalankan program pada terminal
+4. lalu bikin laporan 
 
 ---
 
