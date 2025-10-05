@@ -88,8 +88,18 @@ public class HelloFunctional {
 **HelloFunctional**  
 
 ![Screenshot hasil](screenshot/ScreenshotFunctionl.png)
-
 ---
+
+**HelloOPP**  
+
+![Screenshot hasil](screenshot/ScreenshotOOP.png)
+---
+
+**HelloProcedural**
+
+![Screenshot hasil](screenshot/ScreenshotProsedural.png)
+---
+
 
 ## Analisis
 
