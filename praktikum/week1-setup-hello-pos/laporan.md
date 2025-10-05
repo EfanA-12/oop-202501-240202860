@@ -122,8 +122,8 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
    - Functional: Paradigma fungsional memiliki maintainability tinggi dan scalability baik untuk sistem komputasi data, tetapi tidak selalu ideal untuk aplikasi interaktif. 
 
 4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?  
-   **Jawaban:** Karena aplikasi POS melibatkan banyak entitas nyata (Produk, Transaksi, Pelanggan) yang lebih mudah dimodelkan sebagai objek dengan atribut dan perilaku. Hal ini membuat program lebih terstruktur, mudah dikembangkan, dan lebih scalable dibanding prosedural.  
+   **Jawaban:** OOP menyediakan struktur yang lebih kuat dan fleksibel yang cocok untuk sistem yang kompleks dan dinamis seperti aplikasi POS, sedangkan prosedural lebih cocok untuk program kecil dan sederhana dengan alur linear yang jelas. 
 
 5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?  
-   **Jawaban:** Dengan memanfaatkan fungsi murni, higher-order function, dan lambda expression, developer bisa menulis logika sekali lalu dipakai ulang tanpa perlu banyak kode tambahan. Hal ini mengurangi boilerplate dan membuat kode lebih ringkas. 
+   **Jawaban:** karena memfokuskan pada abstraksi komputasi melalui Fungsi Tingkat Tinggi (Higher-Order Functions - HOF) dan Fungsi sebagai Warga Negara Kelas Satu (First-Class Functions). 
 
