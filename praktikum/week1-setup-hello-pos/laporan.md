@@ -85,8 +85,9 @@ public class HelloFunctional {
 
 ## Hasil Eksekusi
 
-**HelloFunctional**   
-![Screenshot hasil](screenshots/ScreenshotFunctionl.png)
+**HelloFunctional**  
+
+![Screenshot hasil](screenshot/ScreenshotFunctionl.png)
 
 ---
 
