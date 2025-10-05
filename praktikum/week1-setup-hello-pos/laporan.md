@@ -105,20 +105,24 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 
 ## Quiz
 1. Apakah OOP selalu lebih baik dari prosedural?  
-   **Jawaban:** Tidak selalu. OOP lebih baik untuk program besar karena modular dan reusable, tapi untuk program kecil yang sederhana, prosedural lebih cepat dan mudah dibuat.  
+   **Jawaban:** OOP tidak selalu lebih baik, tetapi lebih cocok untuk program besar dan kompleks. Sementara paradigma prosedural tetap relevan untuk program kecil, script, dan algoritma sederhana..  
 
 2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?  
-   **Jawaban:** Functional cocok dipakai saat mengolah data dalam jumlah besar, pemrosesan paralel/stream, atau aplikasi AI/ML, karena minim side-effect dan lebih aman dalam environment multi-thread.  
+   **Jawaban:** Functional programming (FP) lebih cocok digunakan dibanding OOP atau prosedural ketika program:
+   - Berfokus pada pengolahan data,
+   - Membutuhkan komputasi paralel atau concurrent,
+   - Harus minim bug dan efek samping, serta
+   - Mengutamakan stabilitas dan prediktabilitas hasil.
 
-3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?  
+4. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?  
    **Jawaban:**  
    - Prosedural: maintainability rendah, rawan spaghetti code, sulit diskalakan.  
    - OOP: lebih mudah dimaintain dan diskalakan karena modularitas (class & object).  
    - Functional: sangat maintainable untuk operasi data dan parallel, tetapi lebih sulit untuk I/O kompleks.  
 
-4. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?  
+5. Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?  
    **Jawaban:** Karena aplikasi POS melibatkan banyak entitas nyata (Produk, Transaksi, Pelanggan) yang lebih mudah dimodelkan sebagai objek dengan atribut dan perilaku. Hal ini membuat program lebih terstruktur, mudah dikembangkan, dan lebih scalable dibanding prosedural.  
 
-5. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?  
+6. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?  
    **Jawaban:** Dengan memanfaatkan fungsi murni, higher-order function, dan lambda expression, developer bisa menulis logika sekali lalu dipakai ulang tanpa perlu banyak kode tambahan. Hal ini mengurangi boilerplate dan membuat kode lebih ringkas. 
 
