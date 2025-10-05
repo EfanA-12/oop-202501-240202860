@@ -7,4 +7,3 @@ public class HelloProcedural {
       System.out.println("I am: " + nama + ", NIM: " + nim);
    }
 }
-p
