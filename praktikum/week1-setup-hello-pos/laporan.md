@@ -70,6 +70,10 @@ public class Helloop {
     }
 }
 ```
+### 3. Prosedural
+```java
+
+```
 ---
 
 ## Hasil Eksekusi
