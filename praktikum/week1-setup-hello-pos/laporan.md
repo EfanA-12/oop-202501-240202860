@@ -33,12 +33,27 @@ Topik:Pengenalan ke 3 Paradigma Pemrograman yaitu (prosedural, OOP, dan fungsion
 ## Kode Program
 (Tuliskan kode utama yang dibuat, contoh:  
 
+### 1. Prosedural
 ```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+// HelloProcedural.java
+public class HelloProcedural {
+    
+    // Method 
+    public static void sapa(String nama, String nim){
+        System.out.println("Hello World I'm "+ nama + " -"+ nim);
+    }
+
+    public static void main(String[] args) {
+        // Prosedural Tanpa Method
+        String nama = "Dimas Wahyu Pratama";
+        String nim = "240202858";
+        System.out.println("Hello World I'm "+ nama + " -"+ nim);
+        
+        // Prosedural dengan method
+        sapa("Dimas Wahyu Pratama", "240202858");
+    }
+}
 ```
-)
 ---
 
 ## Hasil Eksekusi
