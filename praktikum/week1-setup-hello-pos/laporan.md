@@ -45,6 +45,10 @@ public class HelloProcedural {
    }
 }
 ```
+### 2. OOP
+```java
+
+```
 ---
 
 ## Hasil Eksekusi
