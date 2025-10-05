@@ -90,16 +90,17 @@ public class HelloFunctional {
 ---
 
 ## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
-)
+
+- Paradigma prosedural mudah dipahami dan cocok untuk program kecil, namun sulit dikembangkan dalam sistem besar.  
+- Paradigma OOP lebih terstruktur, mudah dikelola, dan mendekati dunia nyata karena berbasis objek, meskipun memerlukan desain yang matang.
+- Paradigma fungsional efisien untuk komputasi paralel dan minim kesalahan, tetapi kurang cocok untuk aplikasi dengan banyak interaksi pengguna.
+
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+bahwa setiap paradigma pemrograman memiliki keunggulan dan keterbatasannya masing-masing.
+Paradigma prosedural sesuai untuk tugas kecil, OOP unggul untuk aplikasi berskala besar yang membutuhkan pengelolaan objek, sedangkan fungsional cocok untuk pemrosesan data dan sistem paralel.
+Dengan memahami ketiga paradigma ini, mahasiswa mampu memilih pendekatan pemrograman yang paling tepat sesuai kebutuhan proyek.
 
 ---
 
