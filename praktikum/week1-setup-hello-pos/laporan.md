@@ -104,7 +104,7 @@ Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
+(1.  Apakah OOP selalu lebih baik dari prosedural?  
    **Jawaban:** …  
 
 2. [Tuliskan kembali pertanyaan 2 dari panduan]  
