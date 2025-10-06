@@ -1,4 +1,4 @@
-public class HelloFunctional {
+public class HelloaFunctionl {
    public static void main(String[] args) {
       String nim = "240202860";
       String nama = "Efan Aryanto Adli";

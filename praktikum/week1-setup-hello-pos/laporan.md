@@ -2,9 +2,9 @@
 Topik:Pengenalan ke 3 Paradigma Pemrograman yaitu (prosedural, OOP, dan fungsional)
 
 ## Identitas
-- Nama  : Efan Aryanto Adli
-- NIM   : 240202860
-- Kelas : 3IKRA
+- Nama  : [Nama Mahasiswa]
+- NIM   : [NIM Mahasiswa]
+- Kelas : [Kelas]
 
 ---
 
