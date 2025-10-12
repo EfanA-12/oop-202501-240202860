@@ -20,7 +20,7 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 ## Dasar Teori 
 1. Class adalah cetak biru (blueprint) atau template dari objek.
 2. Object adalah instansiasi dari class yang berisi data (atribut) dan perilaku (method).  
-3. Enkapsulasi berarti menyembunyikan data internal suatu objek dengan menjadikan atribut bersifat 'private', dan memberikan akses melalui getter dan setter.
+3. Enkapsulasi berarti menyembunyikan data internal suatu objek dengan menjadikan atribut bersifat "private", dan memberikan akses melalui getter dan setter.
 4. Access modifier seperti public, private, dan protected digunakan untuk mengatur tingkat akses antar kelas.
 
 ---
