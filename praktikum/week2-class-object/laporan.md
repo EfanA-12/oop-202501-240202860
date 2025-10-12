@@ -146,7 +146,7 @@ public class MainProduk {
 
 ## Hasil Eksekusi
   
-![Screenshot hasil](screenshots/Screenshot Hasil.png)
+![Screenshot hasil](screenshots/ScreenshotHasil.png)
 
 ---
 
