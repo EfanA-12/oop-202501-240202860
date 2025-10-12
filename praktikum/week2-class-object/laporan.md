@@ -1,5 +1,5 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+# Laporan Praktikum Minggu 2
+Topik: Class dan Object
 
 ## Identitas
 - Nama  : Efan Aryantro Adli
@@ -21,15 +21,25 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 1. Class adalah cetak biru (blueprint) atau template dari objek.
 2. Object adalah instansiasi dari class yang berisi data (atribut) dan perilaku (method).  
 3. Enkapsulasi berarti menyembunyikan data internal suatu objek dengan menjadikan atribut bersifat `private`, dan memberikan akses melalui getter dan setter.
-4. Access modifier seperti public, private, dan protected digunakan untuk mengatur tingkat akses antar kelas.
+4. Access modifier seperti `public`, `private`, dan `protected` digunakan untuk mengatur tingkat akses antar kelas.
 
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. Buat class `Prodak`
+   - Buat file `Produk.java` di dalam package `model`
+   - Tambahkan atribut `kode`, `nama`, `harga`, dan `stok`
+   - Terapkan enkapsulasi dengan menjadikan atribut `private` serta membuat getter dan setter
+   - Tambahkan method `tambahStok(int jumlah` dan `kurangiStok(int jumlah)` untuk mengelola stok
+2. Membuat Class `CreditBy`
+   - Buat file `CreditBy.java` di dalam package `util`
+   - Tambahkan method static untuk menampilkan identitas mahasiswa
+3. Membuat `class MainProduk`
+   - Buat file `MainProduk.java`
+   - buat empat objek produk seperti “Beras”, “Telur Ayamg”, "Minyak Goreng", dan “Tepung Terigu”
+   - Tampilkan data tiap produk menggunakan getter
+4. Menjalankan dan Menguji Program
+   - Jalankan program dan pastikan output sesuai
 
 ---
 
@@ -149,17 +159,16 @@ public class MainProduk {
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+Praktikum ini menunjukkan bahwa dengan menggunakan konsep class dan object, kita bisa membuat program yang lebih rapi dan mudah dikelola. Setiap produk pertanian bisa dibuat sebagai objek dengan data dan perilaku sendiri. Penggunaan getter dan setter membantu menjaga keamanan data, dan program ini berhasil menerapkan dasar-dasar OOP dengan baik.
 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+1. Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?
+Jawaban: Karena dengan menjadikan atribut private, data di dalam objek tidak bisa diubah secara langsung dari luar class. Hal ini menjaga keamanan dan konsistensi data agar hanya bisa diakses melalui method khusus seperti getter dan setter.
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. Apa fungsi getter dan setter dalam enkapsulasi?
+Jawaban: Getter digunakan untuk mengambil nilai dari atribut, sedangkan setter digunakan untuk mengubah nilainya. Keduanya berfungsi sebagai pengontrol akses agar data dalam objek tetap aman dan hanya dapat diubah dengan cara yang benar.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. Bagaimana cara class Produk mendukung pengembangan aplikasi POS yang lebih kompleks?
+Jawaban: Class Produk menjadi dasar untuk mengelola data produk di sistem POS. Dengan struktur yang rapi dan atribut lengkap, class ini bisa dikembangkan lebih lanjut untuk menambahkan fitur seperti pengelolaan stok otomatis, perhitungan total harga, atau integrasi dengan database dan transaksi penjualan.
