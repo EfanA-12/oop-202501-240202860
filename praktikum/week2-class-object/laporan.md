@@ -165,10 +165,10 @@ Praktikum ini menunjukkan bahwa dengan menggunakan konsep class dan object, kita
 
 ## Quiz
 1. Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?
-Jawaban: Karena dengan menjadikan atribut private, data di dalam objek tidak bisa diubah secara langsung dari luar class. Hal ini menjaga keamanan dan konsistensi data agar hanya bisa diakses melalui method khusus seperti getter dan setter.
+ **Jawaban:**   Karena dengan menjadikan atribut private, data di dalam objek tidak bisa diubah secara langsung dari luar class. Hal ini menjaga keamanan dan konsistensi data agar hanya bisa diakses melalui method khusus seperti getter dan setter.
 
 2. Apa fungsi getter dan setter dalam enkapsulasi?
-Jawaban: Getter digunakan untuk mengambil nilai dari atribut, sedangkan setter digunakan untuk mengubah nilainya. Keduanya berfungsi sebagai pengontrol akses agar data dalam objek tetap aman dan hanya dapat diubah dengan cara yang benar.
+ **Jawaban:**   Getter digunakan untuk mengambil nilai dari atribut, sedangkan setter digunakan untuk mengubah nilainya. Keduanya berfungsi sebagai pengontrol akses agar data dalam objek tetap aman dan hanya dapat diubah dengan cara yang benar.
 
 3. Bagaimana cara class Produk mendukung pengembangan aplikasi POS yang lebih kompleks?
-Jawaban: Class Produk menjadi dasar untuk mengelola data produk di sistem POS. Dengan struktur yang rapi dan atribut lengkap, class ini bisa dikembangkan lebih lanjut untuk menambahkan fitur seperti pengelolaan stok otomatis, perhitungan total harga, atau integrasi dengan database dan transaksi penjualan.
+ **Jawaban:**   Class Produk menjadi dasar untuk mengelola data produk di sistem POS. Dengan struktur yang rapi dan atribut lengkap, class ini bisa dikembangkan lebih lanjut untuk menambahkan fitur seperti pengelolaan stok otomatis, perhitungan total harga, atau integrasi dengan database dan transaksi penjualan.
