@@ -9,17 +9,19 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+1. Mahasiswa mampu menjelaskan konsep class, object, atribut, dan method dalam pemrograman berorientasi objek (OOP).
+2. Mahasiswa mampu menerapkan access modifier dan prinsip enkapsulasi dalam pembuatan kelas.
+3. Mahasiswa mampu membuat dan mengimplementasikan class Produk pertanian dengan atribut serta method yang relevan.
+4. Mahasiswa mampu melakukan instansiasi object dan menampilkan data produk pertanian melalui console output.
+5. Mahasiswa mampu menyusun laporan praktikum dengan bukti kode, hasil eksekusi, dan analisis sederhana.
 
 ---
 
-## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+## Dasar Teori 
+1. Class adalah cetak biru (blueprint) atau template dari objek.
+2. Object adalah instansiasi dari class yang berisi data (atribut) dan perilaku (method).  
+3. Enkapsulasi berarti menyembunyikan data internal suatu objek dengan menjadikan atribut bersifat 'private', dan memberikan akses melalui getter dan setter.
+4. Access modifier seperti public, private, dan protected digunakan untuk mengatur tingkat akses antar kelas.
 
 ---
 
