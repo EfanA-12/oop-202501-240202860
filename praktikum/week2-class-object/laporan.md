@@ -151,11 +151,11 @@ public class MainProduk {
 ---
 
 ## Analisis
-(
+
 - Jelaskan bagaimana kode berjalan.  
 - Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
 - Kendala yang dihadapi dan cara mengatasinya.  
-)
+
 ---
 
 ## Kesimpulan
