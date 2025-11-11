@@ -1,17 +1,15 @@
 package main.java.com.upb.agripos.model;
 
 public class AlatPertanian extends Produk {
-    private String material;
+    private String bahan;
 
-    public AlatPertanian(String kode, String nama, double harga, int stok, String material) {
+    public AlatPertanian(String kode, String nama, double harga, int stok, String bahan) {
         super(kode, nama, harga, stok);
-        this.material = material;
+        this.bahan = bahan;
     }
 
-    public String getMaterial() { return material; }
-    public void setMaterial(String material) { this.material = material; }
-
-    public void deskripsi() {
-        System.out.println("Alat " + getNama() + " (Material: " + material + ") - Harga: Rp" + getHarga() + ", Stok: " + getStok());
+    @Override
+    public String getInfo() {
+        return "Alat Pertanian - " + super.getInfo() + ", Bahan: " + bahan;
     }
 }

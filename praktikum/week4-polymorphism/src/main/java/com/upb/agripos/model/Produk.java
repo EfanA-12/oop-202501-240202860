@@ -13,6 +13,7 @@ public class Produk {
         this.stok = stok;
     }
 
+    // ===== Method Overloading =====
     public void tambahStok(int jumlah) {
         this.stok += jumlah;
     }
@@ -21,7 +22,16 @@ public class Produk {
         this.stok += (int) jumlah;
     }
 
+    // ===== Getter Info =====
     public String getInfo() {
-        return "Produk: " + nama + " (Kode: " + kode + ")";
+        return "Produk: " + nama +
+               " (Kode: " + kode + "), Harga: " + harga +
+               ", Stok: " + stok;
     }
+
+    // Getter dan Setter opsional
+    public String getKode() { return kode; }
+    public String getNama() { return nama; }
+    public double getHarga() { return harga; }
+    public int getStok() { return stok; }
 }
