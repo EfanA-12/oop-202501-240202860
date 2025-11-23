@@ -196,7 +196,7 @@ public class MainPolymorphism {
 ---
 
 ## Hasil Eksekusi 
-![Screenshot hasil](screenshots/ScreenshotHasilPraktikum)
+![Screenshot hasil](screenshots/ScreenshotHasilPraktikum.png)
 ---
 
 ## Analisis
