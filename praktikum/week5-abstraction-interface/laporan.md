@@ -247,10 +247,8 @@ public class MainAbstraction {
 ```
 ---
 
-## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
+## Hasil Eksekusi  
 ![Screenshot hasil](screenshots/Hasil.png)
-)
 ---
 
 ## Analisis
