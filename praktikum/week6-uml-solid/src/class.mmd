@@ -1,0 +1,72 @@
+classDiagram
+    direction BT
+    
+    class User {
+        -String userID
+        -String username
+        -String password
+        -String role
+        +login()
+        +logout()
+    }
+
+    class Admin {
+        +Kelola Produk()
+        +lihat Laporan()
+    }
+
+    class Kasir {
+        +buat Transaksi()
+    }
+
+    class Laporan {
+        -Date periode Awal
+        -Date periode Akhir
+        -Float total Pendapatan
+        +generate Laporan()
+        +export Excel()
+    }
+
+    class Transaksi {
+        -String noFaktur
+        -Date tanggal
+        -Float total Belanja
+        -Float uang Bayar
+        -Float kembalian
+        +tambah Item(Produk)
+        +hitung Total()
+        +proses Bayar()
+        +cetak Struk()
+    }
+
+    class DetailTransaksi {
+        -Int jumlah
+        -Float subTotal
+        +hitung SubTotal()
+    }
+
+    class Produk {
+        -String kodeProduk
+        -String namaProduk
+        -Float harga
+        -Int stok
+        +get Info()
+        +update Stok(jumlah)
+    }
+
+    %% Hubungan sesuai foto
+    Admin --|> User
+    Kasir --|> User
+    
+    %% Admin ke arah bawah (menggunakan direction default untuk ini)
+    Admin ..> Laporan : melihat
+    Admin ..> Produk : mengelola (CRUD)
+    
+    Laporan "1" --> "0..*" Transaksi : merangkum
+    Kasir "1" --> "0..*" Transaksi : memproses
+    
+    %% Komposisi (Belah ketupat hitam)
+    Transaksi "1" *-- "1..*" DetailTransaksi : memiliki
+    
+    %% Detail ke Produk
+    DetailTransaksi "0..*" --> "1" Produk : berisi

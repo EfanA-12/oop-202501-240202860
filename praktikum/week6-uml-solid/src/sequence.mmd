@@ -1,0 +1,131 @@
+- Login 
+sequenceDiagram
+    autonumber
+    actor Actor as Actor (Kasir/Admin)
+    participant HL as Halaman Login
+    participant LC as Login Controller
+    participant DB as Database User
+
+    Actor->>HL: Input Username & Password
+    Actor->>HL: Klik Tombol Login
+    HL->>LC: validasiLogin(username, password)
+    activate LC
+    LC->>DB: cekUser(username, password)
+    activate DB
+    DB-->>LC: Return Data User / Null
+    deactivate DB
+
+    alt Data Valid
+        LC-->>HL: Login Sukses
+        HL-->>Actor: Redirect ke Dashboard Utama
+    else Data Tidak Valid
+        LC-->>HL: Login Gagal
+        deactivate LC
+        HL-->>Actor: Tampilkan Pesan "Username/Password Salah"
+    end
+
+- Melihat Laporan Penjualan
+sequenceDiagram
+    autonumber
+    actor Admin as Admin
+    participant HL as Halaman Laporan
+    participant LC as Laporan Controller
+    participant DT as Database Transaksi
+
+    Admin->>HL: Buka Menu Laporan
+    Admin->>HL: Pilih Periode Tanggal
+    Admin->>HL: Klik Tampilkan
+    HL->>LC: getLaporan(tgl_awal, tgl_akhir)
+    activate LC
+    LC->>DT: queryTransaksi(range_tanggal)
+    activate DT
+    DT-->>LC: Return List Data Penjualan
+    deactivate DT
+    
+    %% Self-call untuk kalkulasi
+    LC->>LC: kalkulasiTotalPendapatan()
+    
+    LC-->>HL: Return Data Laporan
+    deactivate LC
+    HL-->>Admin: Tampilkan Grafik & Tabel Laporan
+- Mengelola Produk
+sequenceDiagram
+    autonumber
+    actor Admin as Admin
+    participant HP as Halaman Produk
+    participant PC as Produk Controller
+    participant DP as Database Produk
+
+    Admin->>HP: Klik Tambah Produk
+    HP-->>Admin: Tampilkan Form Input
+    Admin->>HP: Input Data (Nama, Harga, Stok)
+    Admin->>HP: Klik Simpan
+    HP->>PC: simpanProduk(data)
+    
+    activate PC
+    Note right of PC: Validasi Input
+    
+    alt Input Valid
+        PC->>DP: insertProduk(data)
+        activate DP
+        DP-->>PC: Return True
+        deactivate DP
+        PC-->>HP: Simpan Berhasil
+        HP-->>Admin: Update Tabel Produk
+    else Input Tidak Valid
+        PC-->>HP: Return Error Message
+        HP-->>Admin: Tampilkan Alert Validasi
+    end
+    deactivate PC
+- Transaksi Penjualan & Cetak Struk
+sequenceDiagram
+    autonumber
+    actor Kasir as Kasir
+    participant FT as Form Transaksi
+    participant TC as Transaksi Controller
+    participant DP as Database Produk
+    participant DT as Database Transaksi
+
+    rect rgb(255, 235, 156)
+        Note over Kasir, FT: Proses Input Barang
+    end
+
+    loop Scan Barang
+        Kasir->>FT: Input ID/Barcode Produk
+        FT->>TC: getInfoProduk(id)
+        activate TC
+        TC->>DP: selectProduk(id)
+        activate DP
+        DP-->>TC: Return Nama, Harga, Stok
+        deactivate DP
+        TC-->>FT: Tampilkan Item di List
+        deactivate TC
+    end
+
+    rect rgb(255, 235, 156)
+        Note over Kasir, FT: Proses Pembayaran
+    end
+
+    Kasir->>FT: Klik Hitung Total
+    FT->>TC: hitungTotal()
+    activate TC
+    TC-->>FT: Tampilkan Total Bayar
+    deactivate TC
+
+    Kasir->>FT: Input Uang Pembayaran
+    FT->>TC: prosesBayar(total, bayar)
+    activate TC
+
+    alt Uang Cukup
+        TC->>DT: simpanTransaksi()
+        activate DT
+        DT-->>TC: Sukses Simpan
+        deactivate DT
+        TC->>DP: kurangiStok()
+        TC-->>FT: Transaksi Berhasil & Tampilkan Kembalian
+        FT-->>Kasir: Cetak Struk Fisik
+    else Uang Kurang
+        TC-->>FT: Error: Uang Tidak Cukup
+        FT-->>Kasir: Minta Input Uang Lagi
+    end
+    deactivate TC
