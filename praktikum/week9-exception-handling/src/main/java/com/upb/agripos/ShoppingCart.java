@@ -6,7 +6,7 @@ import java.util.Map;
 public class ShoppingCart {
     private final Map<Product, Integer> items = new HashMap<>();
 
-    public void addProduct(Product p, int qty) throws InvalidQuantityException {
+    public void addProduct(Product p, int qty) throws InvalidQuantityException { 
         if (qty <= 0) {
             throw new InvalidQuantityException("Quantity harus lebih dari 0.");
         }

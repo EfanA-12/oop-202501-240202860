@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "praktikum/week11-dao-database/AgriPosDAO/lib/postgresql-42.7.8.jar"
+    ]
+}
