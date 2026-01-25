@@ -768,7 +768,7 @@ public class Main {
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
+![Screenshot hasil](screenshots/Hasil.png)
 )
 ---
 
